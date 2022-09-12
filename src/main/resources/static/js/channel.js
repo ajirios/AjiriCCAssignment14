@@ -1,4 +1,14 @@
 
+if (sessionStorage.getItem("username") == null)
+{
+	window.location.href = "../welcome";
+}
+
+if (sessionStorage.getItem("channelId") == null)
+{
+	window.location.href = "../welcome";
+}
+
 const textarea = document.querySelector('#textarea');
 var channelId = sessionStorage.getItem("channelId");
 
